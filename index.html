@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhan Kareem 🌙</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Website Icon" type="png" href="ramadhan.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay loop muted id="background-video">
+        <source src="Ramadhan.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video HTML5.
+    </video>
+
+    <!-- Background Animasi -->
+    <div class="background-animation"></div>
+
+    <!-- Halaman Pembuka -->
+    <div id="welcome-screen">
+        <h1>🌙 Marhaban ya Ramadhan! ✨</h1>
+        <p>Selamat datang, Teman-Teman Nasya! Klik tombol di bawah untuk melihat pesan spesial buat kamu. 😊</p>
+        <button id="openMessage">Buka Pesan 📜</button>
+        <button id="playMusic">🎵 Putar Musik</button>
+    </div>
+
+    <!-- Pesan Utama -->
+    <div id="message-container" class="hidden">
+        <div class="message-box">
+            <h2>🌟 Ramadhan Kareem, Best! 🌟</h2>
+            <p>
+                Assalamu’alaikum warahmatullahi wabarakatuh
+                <br><br>
+                Haii!! 🌟 Nggak kerasa ya, waktu cepet banget berlalu, dan sekarang kita udah mau masuk bulan Ramadhan lagi! 🌙✨  
+                Semoga Ramadhan tahun ini membawa banyak keberkahan, kebahagiaan, dan ketenangan buat kita semua. 🤲💖  
+                <br><br>
+                Di momen ini, aku juga mau minta maaf ya kalau selama ini ada kata-kata, sikap, atau hal-hal yang mungkin nggak sengaja bikin kamu kesel atau nggak nyaman 🙏😣.  
+                <br><br>
+                Semoga di bulan suci ini, semua doa dan harapan kita dikabulkan, segala urusan dimudahkan, dan kita bisa menjalani hari-hari dengan lebih baik lagi! 💕  
+                <br><br>
+                Oh iya, nanti jangan lupa atur jadwal buat buka bareng yaa! 🍽️😆  
+            </p>
+            <button id="closeMessage">Tutup Pesan ✖️</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop muted>
+        <source src="bg-music.mp3" type="audio/mp3">
+        Browser kamu tidak mendukung audio HTML5.
+    </audio>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
