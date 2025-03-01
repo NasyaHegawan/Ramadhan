@@ -6,7 +6,8 @@
     <title>Ramadhan Kareem 🌙</title>
     <link rel="stylesheet" href="style.css">
     <link rel="Website Icon" type="png" href="ramadhan.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,13 +20,28 @@
     <!-- Background Animasi -->
     <div class="background-animation"></div>
 
+    
+
     <!-- Halaman Pembuka -->
-    <div id="welcome-screen">
-        <h1>🌙 Marhaban ya Ramadhan! ✨</h1>
-        <p>Selamat datang, Teman-Teman Nasya! Klik tombol di bawah untuk melihat pesan spesial buat kamu. 😊</p>
-        <button id="openMessage">Buka Pesan 📜</button>
-        <button id="playMusic">🎵 Putar Musik</button>
+    <!-- Halaman Pembuka -->
+<div id="welcome-screen">
+    <h1>🌙 Marhaban ya Ramadhan! ✨</h1>
+    <p>Selamat datang, Teman-Teman Nasya! Klik tombol di bawah untuk melihat pesan spesial buat kamu 😊</p>
+    <button id="openMessage">Buka Pesan 📜</button>
+    <button id="playMusic">🎵 Putar Musik</button>
+
+    <!-- Tambahkan countdown di dalam welcome-screen -->
+    <div class="countdown-container">
+        <p>Ramadhan Kareem</p>
+        <div class="countdown">
+            <div class="box"><span id="days">00</span><small>Hari</small></div>
+            <div class="box"><span id="hours">00</span><small>Jam</small></div>
+            <div class="box"><span id="minutes">00</span><small>Menit</small></div>
+            <div class="box"><span id="seconds">00</span><small>Detik</small></div>
+        </div>
     </div>
+</div>
+
 
     <!-- Pesan Utama -->
     <div id="message-container" class="hidden">
@@ -34,14 +50,14 @@
             <p>
                 Assalamu’alaikum warahmatullahi wabarakatuh
                 <br><br>
-                Haii!! 🌟 Nggak kerasa ya, waktu cepet banget berlalu, dan sekarang kita udah mau masuk bulan Ramadhan lagi! 🌙✨  
-                Semoga Ramadhan tahun ini membawa banyak keberkahan, kebahagiaan, dan ketenangan buat kita semua. 🤲💖  
+                Haii!! 🌟 Nggak kerasa ya, waktu cepet banget berlalu, dan sekarang kita udah masuk bulan Ramadhan lagi! 🌙✨  
+                Semoga Ramadhan tahun ini membawa banyak keberkahan, kebahagiaan, dan ketenangan buat kita semua. 🤲
                 <br><br>
-                Di momen ini, aku juga mau minta maaf ya kalau selama ini ada kata-kata, sikap, atau hal-hal yang mungkin nggak sengaja bikin kamu kesel atau nggak nyaman 🙏😣.  
+                Di momen ini, aku juga mau minta maaf ya kalau selama ini ada kata-kata, sikap, atau hal-hal yang mungkin nggak sengaja bikin kamu kesel atau nggak nyaman 🙏😞.  
                 <br><br>
-                Semoga di bulan suci ini, semua doa dan harapan kita dikabulkan, segala urusan dimudahkan, dan kita bisa menjalani hari-hari dengan lebih baik lagi! 💕  
+                Semoga di bulan suci ini, semua doa dan harapan kita dikabulkan, segala urusan dimudahkan, dan kita bisa menjalani hari-hari dengan lebih baik lagi! 😁  
                 <br><br>
-                Oh iya, nanti jangan lupa atur jadwal buat buka bareng yaa! 🍽️😆  
+                Oh iya, nanti jangan lupa atur jadwal buat buka bareng yaa! <br>🍽️😆  
             </p>
             <button id="closeMessage">Tutup Pesan ✖️</button>
         </div>

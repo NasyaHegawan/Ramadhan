@@ -34,3 +34,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Countdown Timer
+function updateCountdown() {
+    const targetDate = new Date("2025-03-31T00:00:00").getTime();
+    const now = new Date().getTime();
+    const timeLeft = targetDate - now;
+
+    document.getElementById("days").textContent = String(Math.floor(timeLeft / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    document.getElementById("hours").textContent = String(Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(Math.floor((timeLeft % (1000 * 60)) / 1000)).padStart(2, '0');
+
+    setTimeout(updateCountdown, 1000);
+}
+updateCountdown();
